@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> | Brightside Co.</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="/">Brightside Co.</a>
+    <ul>
+      <li><a href="/" class="<%= page === 'home' ? 'active' : '' %>">Home</a></li>
+      <li><a href="/services" class="<%= page === 'services' ? 'active' : '' %>">Our Services</a></li>
+      <li><a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>">Contact us</a></li>
+    </ul>
+  </nav>
+  <main>
